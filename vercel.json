@@ -3,12 +3,12 @@
       {
         "src": "index.html",
         "use": "@vercel/node",
-        "config": { "maxLambdaSize": "2048mb" },
-        "command": "npm install && npm run build"
+        "config": { "maxLambdaSize": "2048mb" }
       }
     ],
     "routes": [
       { "src": "/(.*)", "dest": "/index.html" }
-    ]
+    ],
+    "version": 2
   }
   
